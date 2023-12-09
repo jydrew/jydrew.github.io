@@ -1,0 +1,327 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>@charset "UTF-8";
+/* Workaround for 'break-before:avoid' */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; }
+
+ul, li {
+  margin: 0;
+  padding: 0; }
+
+span {
+  display: block; }
+
+p {
+  margin: 0; }
+
+@page {
+  size: A4;
+  margin: 10mm 0 10mm 0; }
+
+@page :first {
+  margin-top: 10mm; }
+
+a {
+  color: #222222;
+  font-weight: inherit;
+  text-decoration: none; }
+  a[href] {
+    text-decoration: underline;
+    text-decoration-color: #555555; }
+
+p {
+  line-height: 1.2; }
+
+li {
+  line-height: 1.3; }
+  li:first-child {
+    margin-top: 0; }
+
+.content {
+  width: 1000px;
+  height: auto;
+  padding: 0 50px;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222222; }
+
+.table {
+  width: 100%;
+  display: table;
+  padding: 5px 0; }
+  .table .main {
+    display: table-cell;
+    width: 70%;
+    padding-right: 50px; }
+    .table .main .highlights {
+      width: auto;
+      display: block;
+      padding: 0 10px;
+      margin-top: 12.30769px;
+      margin-bottom: 0;
+      text-align: justify;
+      column-gap: 10px; }
+      .table .main .highlights li {
+        font-size: 16px;
+        list-style: none;
+        line-height: 1.2; }
+        .table .main .highlights li:before {
+          content: "· ";
+          vertical-align: middle; }
+  .table .side {
+    display: table-cell;
+    width: 30%;
+    padding-left: 50px;
+    text-align: right; }
+    .table .side p {
+      line-height: 1.3; }
+
+.section-title {
+  font-size: 26px;
+  font-weight: normal;
+  margin: 0 0 5px 0; }
+
+.margin-container-2:not(:first-child) {
+  margin-top: 20px; }
+
+.margin-container-3:not(:first-child) {
+  margin-top: 10px; }
+
+.margin-container-4:not(:first-child) {
+  margin-top: 50px; }
+
+.margin-text-1 {
+  margin-top: 0.25em; }
+  .margin-text-1:empty {
+    display: none; }
+
+.margin-text-2 {
+  margin-top: 0.5em; }
+  .margin-text-2:empty {
+    display: none; }
+
+.margin-text-3 {
+  margin-top: 1em; }
+  .margin-text-3:empty {
+    display: none; }
+
+.no-break {
+  break-inside: avoid; }
+
+.no-alone-1 {
+  break-inside: avoid; }
+  .no-alone-1::after {
+    content: "";
+    display: block;
+    height: 75px;
+    margin-bottom: -75px; }
+
+.no-alone-2 {
+  break-inside: avoid; }
+  .no-alone-2::after {
+    content: "";
+    display: block;
+    height: 150px;
+    margin-bottom: -150px; }
+
+.markdown h1 {
+  font-size: 160%;
+  font-weight: bolder; }
+
+.markdown h2 {
+  font-size: 150%;
+  font-weight: bolder; }
+
+.markdown h3 {
+  font-size: 140%;
+  font-weight: bolder; }
+
+.markdown h4 {
+  font-size: 130%;
+  font-weight: bold; }
+
+.markdown h5 {
+  font-size: 120%;
+  font-weight: bold; }
+
+.markdown h6 {
+  font-size: 110%;
+  font-weight: bold; }
+
+.markdown ul, .markdown ol {
+  margin-left: 20px; }
+
+.markdown img {
+  display: block;
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: center; }
+
+.markdown blockquote {
+  margin: 20px 0;
+  padding: 15px 20px; }
+  .markdown blockquote p {
+    display: inline; }
+
+.markdown code {
+  font-family: monospace; }
+
+.basics .main {
+  vertical-align: middle; }
+  .basics .main .name {
+    font-size: 50px;
+    line-height: 1em;
+    font-weight: bold;
+    display: block;
+    margin-left: -3.5px; }
+  .basics .main .label {
+    font-size: 30px;
+    line-height: 1em;
+    font-weight: lighter;
+    display: block;
+    margin-left: -1.2px; }
+
+.basics .side {
+  vertical-align: middle;
+  padding-left: 0;
+  padding-top: 15px; }
+  .basics .side .contact {
+    font-size: 14px;
+    list-style-type: none; }
+    .basics .side .contact li {
+      line-height: 1.5em; }
+
+.basics .summary {
+  font-size: 16px;
+  padding: 20px 0;
+  text-align: justify; }
+
+.work .header .table {
+  padding: 0; }
+  .work .header .table .left {
+    display: table-cell; }
+    .work .header .table .left .position {
+      font-size: 18px;
+      font-weight: bold;
+      display: block; }
+    .work .header .table .left .company-location {
+      font-size: 17px;
+      font-weight: lighter;
+      display: block; }
+      .work .header .table .left .company-location a {
+        text-decoration-color: #888888; }
+  .work .header .table .right {
+    text-align: right;
+    display: table-cell; }
+    .work .header .table .right .dates {
+      font-size: 15px;
+      font-weight: lighter; }
+
+.work .summary {
+  font-size: 16px;
+  padding: 0;
+  margin-top: 12.30769px; }
+  .work .summary:empty {
+    display: none; }
+
+.projects .header .name {
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block; }
+  .projects .header .name a {
+    text-decoration-color: #222222; }
+
+.projects .header .roles {
+  font-size: 16px;
+  line-height: 18px;
+  display: inline-block; }
+
+.projects .description {
+  font-size: 16px;
+  padding: 0;
+  margin-top: 12.30769px;
+  text-align: justify; }
+  .projects .description:empty {
+    display: none; }
+
+.skills .section-title {
+  margin: 0; }
+
+.skills .container {
+  display: block;
+  columns: 2;
+  column-gap: 10px; }
+  .skills .container .article {
+    break-inside: avoid-column;
+    width: 120px;
+    padding-top: 20px; }
+    .skills .container .article span {
+      display: block;
+      font-size: 18px;
+      font-weight: lighter; }
+    .skills .container .article li {
+      font-size: 16px;
+      list-style: none;
+      line-height: 1.3; }
+
+.education .title {
+  font-size: 16px; }
+
+.education .institution {
+  font-size: 16px;
+  font-weight: lighter; }
+  .education .institution a {
+    text-decoration-color: #888888; }
+
+.certificates .name {
+  font-size: 16px; }
+
+.certificates .issuer {
+  font-size: 16px;
+  font-weight: lighter;
+  margin-top: 0.35em; }
+
+.awards .header .title {
+  font-size: 16px;
+  display: inline-block; }
+
+.awards .header .awarder {
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 16px;
+  display: inline-block; }
+
+.awards .summary {
+  font-size: 14px; }
+
+.languages ul {
+  list-style: none; }
+  .languages ul li {
+    font-size: 14px; }
+
+.interests ul {
+  list-style: none; }
+  .interests ul li {
+    font-size: 16px; }
+
+.links ul {
+  list-style: none; }
+  .links ul li {
+    font-size: 14px; }
+</style><title>Jun Yuan</title></head><body><div class="content"><div class="basics"><div class="table"><div class="main"><span class="name">Jun Yuan 袁军</span><span class="label">Data Story Teller, passionate about AI Fairness and Human-Centered Decision-Making</span><span class="summary markdown"><p>I am a PhD candidate in Data Science, with a background in Mathematics and Statistics. My research interest lies in the intersection of human-centered AI and information visualization. Currently, I am working on designing visual analytic interfaces for ranking interpretation on high-stake decision-making (e.g., student course evaluation, AI hiring practice); adapting Learning-to-rank for fairness, accountability, and transparency; adversarial attacks and detection on explainable AI methods; information-seeking in crisis.</p>
+</span></div><div class="side"><img src="profile_photo.png", width='180' height='180'><ul class="contact"><li class="article margin-text-2"><a href="https://niiv.njitvis.com"><strong>niiv.njitvis.com</strong></a></li><li class="article"><a href="mailto:jy448@njit.edu"><strong>jy448@njit.edu</strong></a></li><li class="article margin-text-2"><a href="https://www.linkedin.com/in/jun-yuan/"><strong>LinkedIn</strong></a></li><li class="article margin-text-2"><a href="https://scholar.google.com/citations?hl=en&amp;user=Y4zT5ZUAAAAJ"><strong>GoogleScholar</strong></a></li></ul></div></div></div><div class="table"><div class="main"><div class="projects margin-container-4"><p class="section-title no-alone-2">Projects & Publications</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><span class="name"><a>Contextual Transparency of Online Hiring Process</a></span></div><div class="description markdown"><p>Ensuring transparency in the recruitment and talent acquisition process is essential. However, the current utilization of automated decision systems has proven to be disadvantageous for recruiters. This endeavor represents an initial effort to establish contextual transparency in online recruiting, with a specific emphasis on promoting candidate diversity and highlighting transferrable skills.</p>
+</div><ul class="highlights no-break">                  <div class="description markdown"><p>▶ <a href="https://www.nature.com/articles/s42256-023-00623-7">M. Sloane, I.R. Solano-Kamaiko, <strong>J. Yuan</strong>, A. Dasgupta, J. Stoyanovich. 2023. Introducing contextual transparency for automated decision systems. <em>Nature Machine Intelligence</em></a></p>
+</div></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><span class="name"><a>Demystify Ranking in Socio-Technical Systems</a></span></div><div class="description markdown"><p>Ranking is a socio-technical artifact that humans interact with daily. This work is an effort to develop principled protocols to understand the existing public rankings (e.g., college rankings), domain-specific rankings (e.g., loan applicant rankings), and rankings that are machine-generated (e.g., social media feed rankings.). Given the spate of new legislations on algorithmic accountability, it is imperative that researchers from social science, human-computer interaction, and data science work in unison to demystify <em>how</em> rankings are produced, <em>who</em> has agency to change them, and <em>what</em> metrics of socio-technical impact one must use for informing the context of use.</p>
+</div><ul class="highlights no-break">                  <div class="description markdown"><p>▶ <a href="https://openreview.net/pdf?id=iMR4ukkUFU"><strong>J. Yuan</strong>, A. Dasgupta.2023. A Simple Scoring Function to Fool SHAP: Stealing from the One Above. <em>XAI in action workshop at NeurIPS23</em></a></p>
+</div><div class="description markdown"><p>▶ <a href="https://arxiv.org/pdf/2308.14622.pdf"><strong>J. Yuan</strong>, K. Bhattacharjee, A. Z. Islam, A. Dasgupta.2023. TRIVEA: Transparent Ranking Interpretation using Visual Explanation of Black-Box Algorithmic Rankers. <em>Visual Computer Journal, Springer</em></a></p>
+</div><div class="description markdown"><p>▶ <a href="https://dl.acm.org/doi/10.1145/3597465.3605221"><strong>J. Yuan</strong>, A. Dasgupta. 2023. A Human-in-the-loop Workflow for Multi-Factorial Sensitivity Analysis of Algorithmic Rankers. <em>Human-in-the-Loop Data Analytics workshop at SIGMOD’23</em></a></p>
+</div><div class="description markdown"><p>▶ <a href="https://arxiv.org/pdf/2211.02932.pdf"><strong>J. Yuan</strong>, A. Dasgupta, J. Stoyanovich. 2022. Rankers, Rankees, &amp; Rankings: Peeking into the Pandora’s Box from a Socio-Technical Perspective. <em>Interrogating Human-Centered Data Science workshop at CHI'22</em></a></p>
+</div></ul></div></div></div><div class="work margin-container-4"><p class="section-title no-alone-2">Experience</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="position"><p>Research Assistant (Thesis Advisor: <a href="https://aedeegee.github.io">Prof. Aritra Dasgupta</a>)</p>
+</span><span class="company-location margin-text-1"><a href="https://informatics.njit.edu/people">NJIT, Department of Informatics</a> · Newark, NJ</span></div><div class="right"><span class="dates">Jan 2019 - Present</span></div></div></div><div class="summary markdown"></div><ul class="highlights no-break"><li>Created a visual analytics workflow and interface to explain ranking models and assist stakeholders in gaining useful insights.</li><li>Formulated Learning-to-rank metrics for human-in-the-loop model training and evaluation.</li><li>Designed post-processing formula and sensitivity analysis to adopt Shapley Values for algorithmic rankers.</li><li>Developed subjectivity analysis workflow on COVID-related scientific communication.</li><li>Organized procedure for subjectivity annotation team.</li><li>Planned and took part in interviews and user studies within a multidisciplinary team.</li><li>Developed data mapping and augmentation rules for student analysis for the College of Computing's Dean's office.</li><li>Designed Tableau visualizations to aid administrators in strategic planning.</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="position"><p>Data Science Intern</p>
+</span><span class="company-location margin-text-1"><a href="https://www.linkedin.com/company/accern/">Accern</a> · New York, NY</span></div><div class="right"><span class="dates">Jun 2021 - Aug 2021</span></div></div></div><div class="summary markdown"></div><ul class="highlights no-break"><li>Subjectivity modeling with BERT on COVID-19 tweets data.</li><li>Developed annotation guidelines and collaborated with a four people annotation team.</li><li>Generated 20 thousand annotation data for model training and achieved above 70% test accuracy.</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="position"><p>Data Science Intern</p>
+</span><span class="company-location margin-text-1"><a href="https://www.linkedin.com/company/accern/">Accern</a> · New York, NY</span></div><div class="right"><span class="dates">Jun 2020 - Aug 2020</span></div></div></div><div class="summary markdown"></div><ul class="highlights no-break"><li>Topic modeling with BERT, T-SNE on finance news data.</li><li>Evaluated Machine Learning models via collaborative manual annotation.</li><li>Discovered temporal trend of topics during the COVID-19 breakout.</li></ul></div></div></div></div><div class="side"><div class="education margin-container-4"><p class="section-title no-alone-1">Education</p><div class="container"><div class="article margin-container-2 no-break"><div class="title markdown"><p>PhD candidate, Data Science</p>
+</div><span class="institution margin-text-1"><a>New Jersey Institute of Technology</a></span></div><div class="article margin-container-2 no-break"><div class="title markdown"><p>MSc, Mathematical Sciences</p>
+</div><span class="institution margin-text-1"><a>Clemson University</a></span></div><div class="article margin-container-2 no-break"><div class="title markdown"><p>BSc, Mathematics</p>
+</div><span class="institution margin-text-1"><a>Hangzhou Dianzi University, China</a></span></div></div></div><div class="skills margin-container-4"><p class="section-title no-alone-1">Skills</p><div class="container"><div class="article no-break"><span>Communication</span><ul class="margin-text-1"><li style="overflow-wrap:anywhere;">Public Speaking</li><li style="overflow-wrap:anywhere;">Tableau</li><li style="overflow-wrap:anywhere;">LaTeX</li><li style="overflow-wrap:anywhere;">Writing</li><li style="overflow-wrap:anywhere;">Empathy</li></ul></div><div class="article no-break"><span>Analysis</span><ul class="margin-text-1"><li style="overflow-wrap:anywhere;">Python</li><li style="overflow-wrap:anywhere;">R</li><li style="overflow-wrap:anywhere;">Matlab</li><li style="overflow-wrap:anywhere;">SAS</li><li style="overflow-wrap:anywhere;">DevOps</li></ul></div></div></div><div class="awards margin-container-4"><p class="section-title no-alone-1">Volunteers</p><div class="container"><div class="article margin-container-2 no-break"><div class="header"><span class="awarder">Graduate Student Association of NJIT</span> · <span class="title">Vice President of Finance</span></div></div><div class="article margin-container-2 no-break"><div class="header"><span class="awarder">Graduate Student Association of NJIT</span> · <span class="title">Vice President of Programming</span></div></div></div></div><div class="awards margin-container-4"><p class="section-title no-alone-1">Teaching</p><div class="container"><div class="article margin-container-2 no-break"><div class="header"><span class="awarder">Data Visualization</span> · <span class="title">Teaching Assistant</span></div></div><div class="article margin-container-2 no-break"><div class="header"><span class="awarder">MATH1010</span> · <span class="title">Instructor of Record</span></div></div><div class="article margin-container-2 no-break"><div class="header"><span class="awarder">STAT8010 (SAS)</span> · <span class="title">Lab Instructor</span></div></div></div></div><div class="awards margin-container-4"><p class="section-title no-alone-1">Mentoring</p><div class="container"><div class="article margin-container-2 no-break"><div class="header"><span class="awarder">NSF-REU Summer Research Program (2019)</span> · <span class="title">Research Mentor</span></div></div></div></div></div></div></div></body></html>
